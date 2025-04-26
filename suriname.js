@@ -155,7 +155,7 @@ let list= [sarnamie,general,sranang,javanese,religious,other];
 
 //BlockList
 let ibl= {
-"sarnamie" : [2,3,4,5,10,13],
+"sarnamie" : [2,3,4,5,8,10,13,17],
 "general" : [],
 "sranang" : [],
 "javanese" : [],
