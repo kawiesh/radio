@@ -337,10 +337,11 @@ function addProxy(oldobj,newobj){
 let proxy0= "https://cors.bitwize.com.lb/";
 let proxy1= "https://www.liveradio.es/";
 let proxy2= "https://api.codetabs.com/v1/proxy?quest=";
+let proxy3= "https://worldradio.online/proxy/?q=";	
 
 for(let key in oldobj){
 if(!key.startsWith("https")){
-newobj[`${proxy2}${key}`]= `${oldobj[key]} !`;
+newobj[`${proxy3}${key}`]= `${oldobj[key]} !`;
 }
 else newobj[key]= oldobj[key];
 }
