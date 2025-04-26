@@ -142,11 +142,12 @@ let other= {
 "https://d1x0scdnoh33b7.cloudfront.net/olonradio/537b9f27/master.m3u8" : "Razo"
 };
 
+/*
 if(location.protocol=="https:"){
 delete general["http://stanvasteradio.gkstreamen.nl:8120/;"];
 general["https://securestreams7.autopo.st/?uri=http://stanvasteradio.gkstreamen.nl:8120/;"]= "Stanvaste !";
 }
-
+*/
 
 //Main list
 let list= [sarnamie,general,sranang,javanese,religious,other];
