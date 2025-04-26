@@ -1,5 +1,5 @@
 let sarnamie= {
-"http://stream.akaashfm.com:8000/live" : "Akaash FM",
+"http://stream.akaashfm.nl:8000/live" : "Akaash FM",
 "https://amorfm_192.streampartner.nl/stream" : "Amor",
 "https://stream.zeno.fm/xssh6qrf1wzuv" : "Assalaam",
 "https://stream.zeno.fm/bu26ykfcxnhvv" : "AVS Classic",
