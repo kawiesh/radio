@@ -65,7 +65,8 @@ let general= {
 "https://stream.rcast.net/67505" : "Suri-Lite",
 //"https://caster05.streampakket.com/proxy/9338/stream/1/" : "Tamara",
 "https://beta.surilive.com/tamara/stream" : "Tamara",  
-"https://surilive.com:8210/;" : "Top 40 Suriname"
+//"https://surilive.com:8210/;" : "Top 40 Suriname",
+"https://cc6.beheerstream.com/proxy/skurebce?mp=/stream" : "Top 40 SU",  
 };
 
 
