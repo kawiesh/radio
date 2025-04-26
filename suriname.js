@@ -60,7 +60,8 @@ let general= {
 "https://video1.getstreamhosting.com:8340/stream" : "SCCN Smooth",
 "https://surilive.com:8060/;" : "SRS",
 "https://rs.suricloud.com/radio/8010/radio.mp3" : "Sky - Pipel",
-"http://stanvasteradio.gkstreamen.nl:8120/;" : "Stanvaste",
+//"http://stanvasteradio.gkstreamen.nl:8120/;" : "Stanvaste",
+"https://my.surilive.com:8120/stream" : "Stanvaste", 
 "https://stream.rcast.net/67505" : "Suri-Lite",
 "https://caster05.streampakket.com/proxy/9338/stream/1/" : "Tamara",
 "https://surilive.com:8210/;" : "Top 40 Suriname"
