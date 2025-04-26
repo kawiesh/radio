@@ -23,7 +23,8 @@ let sarnamie= {
 "https://audio-edge-es6pf.mia.g.radiomast.io/d7e8093b-6a7e-4442-a096-37f259cb7092" : "Rapar",
 "https://stream.zeno.fm/6etys88fup8uv" : "Rasonic",
 "https://solid48.streamupsolutions.com/proxy/radiosbs/radiosbs" : "SBS Radio",
-"http://stream2.iqhosted.nl:8000/stream/1/" : "Sangam",
+//"http://stream2.iqhosted.nl:8000/stream/1/" : "Sangam",
+"http://mediaserv68.live-streams.nl:8067/stream" : "Sangam"  
 "https://rs.suricloud.com/radio/8030/radio.mp3" : "Sangeetmala",
 "https://rs.suricloud.com/radio/8130/radio.mp3" : "Sargam",
 "https://rs.suricloud.com/radio/8000/radio.mp3" : "Shruti",
