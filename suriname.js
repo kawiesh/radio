@@ -8,7 +8,7 @@ let sarnamie= {
 "https://mediaserv38.live-streams.nl:18039/stream" : "Awaaz",
 "https://surilive.com:8340/;" : "Baithak Radio",  
 "https://stream.zeno.fm/putkar0p9k0uv" : "Bollywood Sur.",
-"https://rs.suricloud.com/listen/radio_boss/radio.mp3" : "Chutney FM",  
+"https://rs.cloued.com/listen/radio_boss/radio.mp3" : "Chutney FM", 
 "http://dhantalradio.ca:8000/;" : "Dhantal",
 //"https://rs.suricloud.com/radio/8120/radio.mp3" : "Ek Sitara",
 "https://eksitara-radiohosting2.radioca.st/stream" : "Ek Sitara",
@@ -44,14 +44,14 @@ let sarnamie= {
 
 let general= {
 "https://surilive.com:8020/;" : "ABC",
-"https://stream.zeno.fm/zh2rs490x68uv" : "Apintie",
+"https://surilive.com:8000/;" : "Apintie",
 "https://stream.zeno.fm/cnkyb0ksduhvv" : "AVS SuMix",
 //"http://cc3b.beheerstream.com:8192/;stream.mp3" : "Cariba FM",
 "http://cloud-faro.beheerstream.com:8616/;stream.mp3" : "Cariba FM",
 "https://surilive.com:8070/;" : "Color Radio",
 "https://stream.zeno.fm/u32bq5sfunhvv" : "DTV Radio",
 "https://stream.zeno.fm/084958y3ynhvv" : "GOV Radio",
-"https://radiostream.limfmsu.com/radio" : "LIM FM",
+"https://marte.trusdev.com:8002/radio" : "LIM FM",
 "https://stream.zeno.fm/5tv3n9cw008uv" : "Lime",
 "https://surilive.com:8010/;" : "NIO FM",
 //"https://larry.torontocast.com:1795/stream" : "Neutral",
@@ -75,7 +75,7 @@ let general= {
 
 
 let sranang= {
-"https://kathy.torontocast.com:2945/stream" : "Anda",
+"https://stream.zeno.fm/b2ukpxvty6duv" : "Anda",
 "https://stream.zeno.fm/q4wkxqmdqchvv" : "Asosye",
 "https://stream.zeno.fm/rnf3xu9tgs8uv" : "Boeskondee Media",
 "https://stream.zeno.fm/wwgta3fqsfhvv" : "Boskopu",
@@ -105,7 +105,7 @@ let sranang= {
 let javanese= {
 "https://caster05.streampakket.com/proxy/8189/stream": "Bangsa Jawa",
 "https://stream.zeno.fm/w6hh0rqqwy8uv": "DjRegi",
-"https://worldstreaminglive.com/proxy/apzrueeh/stream": "Garuda",
+"https://worldstreaminglive.com/proxy/grdsur/stream": "Garuda",
 "http://server.jvhost.net:8010/stream" : "Kabar Katresnan",
 "http://procyon.shoutca.st:8302/stream" : "Pertjajah",
 //"http://176.9.86.211:8153/stream": " Pertjajah",
@@ -118,7 +118,7 @@ let javanese= {
 let religious= {
 "https://stream.zeno.fm/kadt188ugy8uv" : "Afonsoewa ✝",
 "https://s5.citrus3.com:8148/stream" : "Bhajan Radio ॐ",
-"https://securestreams8.autopo.st:3006/1" : "Bhakti Sagar ॐ",
+"https://stream.zeno.fm/lcida9v81nmvv" : "Bhakti Sagar ॐ",
 "https://ibadat.out.airtime.pro/ibadat_a" : "Devi Maa Radio ॐ",
 "https://stream.zeno.fm/6nt6k3e2x68uv" : "Immanu&euml;l ✝",
 "https://stream-52.zeno.fm/f9h69cgbu68uv" : "Love Islam Radio ☪",
@@ -128,7 +128,7 @@ let religious= {
 "https://millenniumhits.out.airtime.pro/millenniumhits_a" : "Krishna Radio ॐ",
 "https://radio.radioquraan.com/9994/stream" : "Radio Quran ☪",
 "https://stream.radiomaria.nl/mp3" : "Radio Maria ✝",
-"https://cc5.beheerstream.com/proxy/exoticaradio?mp=/stream" : "Radio mArt ✝",
+"https://beta.surilive.com/mart/stream" : "Radio mArt ✝",
 "https://worldstreaminglive.com/proxy/radioshalom/stream" : "Shalom ✝",
 "https://hot.out.airtime.pro/hot_a" : "Shiva Radio ॐ"
 };
@@ -141,7 +141,7 @@ let other= {
 "https://stream.zeno.fm/93mh70awpuhvv" : "Golden Oldies",
 "https://2000er.stream.laut.fm/2000er" : "Laut FM 2000s",
 "https://surilive.com:8050/stream/1/" : "LPM Portugese",
-"https://d1x0scdnoh33b7.cloudfront.net/olonradio/537b9f27/master.m3u8" : "Razo"
+"https://nlpo.stream.vip/saltoraz/mp3-192/nlpo/play.m3u8" : "Razo"
 };
 
 /*
