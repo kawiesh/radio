@@ -183,3 +183,64 @@ minute: '2-digit'
 
 select(".lastmod").innerHTML= `Stations updated on ${_date} @ ${_time}`;
 });
+
+
+//snow function
+function startSnow(letter, color) {
+    var container = document.createElement('div');
+    document.body.appendChild(container);
+    container.style.position = 'fixed';
+    container.style.top = '0';
+    container.style.left = '0';
+    container.style.width = '100%';
+    container.style.height = '100%';
+    container.style.overflow = 'hidden';
+    container.style.pointerEvents = 'none';
+
+    function init() {
+        var injection = document.createElement('style');
+        document.body.appendChild(injection);
+        injection.innerHTML = `
+            @-webkit-keyframes snow {
+                from { top: -1%; }
+                to { top: 121%; }
+            }
+            @-moz-keyframes snow {
+                from { top: -1%; }
+                to { top: 121%; }
+            }
+        `;
+    }
+
+    init();
+
+    var timeChoices = [5, 6, 7, 8, 9, 10];
+
+    function destroy(evt) {
+        container.removeChild(evt.target);
+    }
+
+    function createParticle() {
+        var particle = document.createElement('span');
+        var randomSpeed = timeChoices[Math.floor(Math.random() * timeChoices.length)];
+
+        particle.innerHTML = letter;
+        particle.className = 'flake';
+        particle.style.position = 'absolute';
+        particle.style.color = color;
+        particle.style.backgroundColor = 'transparent';
+        particle.style.pointerEvents = 'none';
+        particle.style.right = Math.random() * 100 + '%';
+        particle.style.fontSize = '16px';
+        particle.style.WebkitAnimation = 'snow ' + randomSpeed + 's linear';
+
+        container.appendChild(particle);
+        particle.addEventListener('webkitAnimationEnd', destroy);
+    }
+
+    return setInterval(createParticle, 200);
+}
+
+/* Call the function */
+startSnow('❄️', 'white');
+
