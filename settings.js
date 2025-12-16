@@ -185,9 +185,9 @@ select(".lastmod").innerHTML= `Stations updated on ${_date} @ ${_time}`;
 });
 
 
-//snow function
+// Lightweight GPU-accelerated snow function based on the js-snow-bookmarklet from wonderful72pike
 function startSnow(letter, color) {
-    var container = document.createElement('div');
+    const container = document.createElement('div');
     document.body.appendChild(container);
     container.style.position = 'fixed';
     container.style.top = '0';
@@ -196,51 +196,61 @@ function startSnow(letter, color) {
     container.style.height = '100%';
     container.style.overflow = 'hidden';
     container.style.pointerEvents = 'none';
+    container.style.zIndex = '9999';
 
-    function init() {
-        var injection = document.createElement('style');
-        document.body.appendChild(injection);
-        injection.innerHTML = `
-            @-webkit-keyframes snow {
-                from { top: -1%; }
-                to { top: 121%; }
-            }
-            @-moz-keyframes snow {
-                from { top: -1%; }
-                to { top: 121%; }
-            }
-        `;
-    }
+    // Inject CSS animation
+    const style = document.createElement('style');
+    style.innerHTML = `
+      @keyframes fall {
+        0% { transform: translateY(-10px); opacity: 1; }
+        100% { transform: translateY(100vh); opacity: 0.8; }
+      }
+    `;
+    document.head.appendChild(style);
 
-    init();
-
-    var timeChoices = [5, 6, 7, 8, 9, 10];
-
-    function destroy(evt) {
-        container.removeChild(evt.target);
-    }
+    const particles = [];
+    const maxParticles = 50; // max snowflakes at a time
 
     function createParticle() {
-        var particle = document.createElement('span');
-        var randomSpeed = timeChoices[Math.floor(Math.random() * timeChoices.length)];
+        if (particles.length >= maxParticles) return; // limit snowflakes
 
-        particle.innerHTML = letter;
-        particle.className = 'flake';
+        const particle = document.createElement('span');
+        const size = 12 + Math.random() * 12; // 12px to 24px
+        const duration = 5 + Math.random() * 5; // 5s to 10s
+        const xPos = Math.random() * 100; // horizontal %
+
+        particle.textContent = letter;
         particle.style.position = 'absolute';
+        particle.style.left = xPos + 'vw';
+        particle.style.fontSize = size + 'px';
         particle.style.color = color;
-        particle.style.backgroundColor = 'transparent';
         particle.style.pointerEvents = 'none';
-        particle.style.right = Math.random() * 100 + '%';
-        particle.style.fontSize = '16px';
-        particle.style.WebkitAnimation = 'snow ' + randomSpeed + 's linear';
+        particle.style.whiteSpace = 'nowrap';
+        particle.style.transform = 'translateY(-10px)';
+        particle.style.animation = `fall ${duration}s linear forwards`;
 
         container.appendChild(particle);
-        particle.addEventListener('webkitAnimationEnd', destroy);
+        particles.push(particle);
+
+        // Remove particle after animation
+        particle.addEventListener('animationend', () => {
+            container.removeChild(particle);
+            const index = particles.indexOf(particle);
+            if (index > -1) particles.splice(index, 1);
+        });
     }
 
-    return setInterval(createParticle, 200);
+    const interval = setInterval(createParticle, 150);
+
+    return {
+        stop: () => clearInterval(interval) // allow stopping the snow
+    };
 }
 
-/* Call the function */
-startSnow('❄️', 'white');
+/* Usage */
+const snow = startSnow('❄️', 'white');
+
+// Stop snow after 10 seconds
+// setTimeout(() => snow.stop(), 10000);
+
 
