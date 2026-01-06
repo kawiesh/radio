@@ -247,10 +247,21 @@ function startSnow(letter, color) {
     };
 }
 
+//Snow in december
+const currentMonth= new Date();
+
+if (currentMonth.getMonth() === 11) { // December is 11 (0-based)
+
+
+
 /* Usage */
 const snow = startSnow('❄️', 'white');
 
 // Stop snow after 10 seconds
 // setTimeout(() => snow.stop(), 10000);
+	
+}
+
+
 
 
